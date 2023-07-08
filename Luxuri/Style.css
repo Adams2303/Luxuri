@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #FFFAF0;
+}
+
+#box3{
+    display: block;
+    height: 720px;
+    width: 1280px;
+    background-color: black;
+    background-image: url(https://img.wallpapersafari.com/desktop/1920/1080/34/23/jAZLIk.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    margin: auto;
+    
+}
+
+#box3:hover{
+    background-image: url(https://cdnassets.hw.net/45/40/817bfa3d4557b62f13b3fad827ed/b3660ef9414b47cdb15b35a234f4f80a.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 500ms;
+}
+
+.box3p {
+    position: absolute;
+    top: 40%;
+    right: 40%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.box3p button{
+    position: absolute;
+    top: 55%;
+    right: 48%;
+    background-color: #25272c;
+    border: none;
+    padding: 10px 10px; 
+    text-align: center; 
+    text-decoration: none; 
+    color: white;
+}
+
+.features{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.headercontainer{
+    text-align: center; 
+}
+
+.footercontainer{
+    display: flex;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+.footercontainer div{
+    width: 400px;
+    padding: 15px;
+}
+
+strong{
+    color: #25272c;
+}
+
+.footercontainer p{
+    color: #878787;
+    font-family: mont
+}
+
+.footercontainer >div{
+    /* display: flex;
+    justify-content: space-between; */
+    float: left;
+    padding-left: 50px;
+}
+
+i{
+    font-size: 46px;
+    color: #333;
+    margin-top: 40px;
+}
+
+.products-page {
+    width: 75%;
+    margin: auto;
+}
+
+#slogan {
+    font-size: 5vw;
+    text-align: center;
+}
+.product-items {
+    display: flex ;
+    justify-content: space-between ;
+    align-items:  center;
+}
+.product-items section{
+    margin: 2.5%;
+} 
+section p {
+    font-size:2vw ;
+    text-align: left;
+    margin-left: 1.5%;
+}
+.name-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-item img {
+    object-fit: contain;
+    width: 100% ;
+    height: 300px;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.product-item{
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+.product-item .overlay{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.product-item:hover img{
+    transform: scale(1.1);
+    opacity: 0.3;
+}
+
+.product-item:hover .overlay {
+    transform: translateX(0);
+    display: block;
+    opacity: 1;
+}
+
+.overlay button{
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px; 
+}
